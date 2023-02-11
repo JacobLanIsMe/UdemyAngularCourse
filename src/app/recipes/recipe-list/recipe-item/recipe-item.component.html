@@ -1,0 +1,11 @@
+<a class="text-decoration-none text-dark" [routerLink]="['/recipes', recipeIndex]" routerLinkActive="active" style="cursor: pointer;">
+    <div class="d-flex justify-content-between ">
+        <div class="w-75 pt-2 ps-2">
+            <h4>{{ recipe.name }}</h4>
+            <p>{{ recipe.description }}</p>
+        </div>
+        <div class="w-25">
+            <img [src]="recipe.imagePath" [alt]="recipe.name" style="width:100%;">
+        </div>
+    </div>
+</a>
